@@ -1,0 +1,236 @@
+html {
+  font-size: 16px; 
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem); 
+  font-weight: 400;    
+  line-height: 1.6;    
+  color: #EAEAEA;
+  background-color: #121212;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.5rem);  
+  font-weight: 700;  
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2rem); 
+  font-weight: 600;
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem); 
+  font-weight: 600;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.25rem);  
+  font-weight: 400;
+  line-height: 1.6;
+  color:#EAEAEA;
+}
+
+.dish-name {
+  font-size: clamp(1rem, 1.25vw, 1.125rem); 
+  font-weight: 500;   
+  line-height: 1.5;
+  color: #EAEAEA;
+}
+
+.dish-description {
+  font-size: clamp(0.875rem, 1vw, 0.95rem); 
+  font-weight: 400;
+  line-height: 1.4;
+  color: #B3B3B3;
+}
+
+button {
+  display: block;
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.875rem, 2vw, 1rem); 
+  font-weight: 600;  
+  border: none;
+  border-radius: 0.5rem;  
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #d01319;
+  color: #EAEAEA;
+}
+
+.sr-only {
+  position: absolute;   
+  width: 1px;   
+  height: 1px; 
+  padding: 0;
+  margin: -1px;      
+  overflow: hidden;    
+  clip: rect(0, 0, 0, 0); 
+  white-space: nowrap;  
+  border: 0;
+}
+
+.disclaimer {
+  font-size: clamp(0.75rem, 0.8vw, 0.875rem);
+  font-weight: 400; 
+  line-height: 1.4; 
+  color: #B3B3B3;    
+  margin-top: 1rem;   
+  font-style: italic;
+}
+
+.button {
+  display: block;
+  padding: clamp(0.5rem, 1vw, 0.75rem);
+  font-size: clamp(0.875rem, 2vw, 1rem); 
+  font-weight: 600;  
+  border: none;
+  border-radius: 0.5rem;  
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #d01319;
+  color: #EAEAEA;
+  text-decoration: none;
+}
+/* pseudoclass */
+.button:hover {
+  border:#F03A40 solid 1px;
+}
+
+.button:active {
+  background-color: #F03A40;
+}
+
+button:hover {
+  border:#F03A40 solid 1px;
+}
+
+button:active {
+  background-color: #F03A40;
+}
+
+/* nav-bar */
+nav.nav-bar{
+    /* border:green solid 1px; */
+    padding: clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
+    display: flex;
+    max-width: 1000px;
+    margin:auto;
+    margin-top:30px;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.nav-bar img{
+    /* border:yellow solid 1px; */
+    max-height: clamp(30px, 10vw, 50px);
+    display: block;
+}
+
+.nav-bar .nav-button{
+    /* border:yellow solid 1px; */
+    max-height: 50px;
+    flex:1;
+    align-content: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #EAEAEA;
+    transition: all 0.3s ease;
+}
+
+.button.order-now#nav{
+    /* border:yellow solid 1px; */
+    max-height: 50px;
+    flex:1;
+    padding:0;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-content: center;
+    min-width: fit-content;
+}
+
+    /*@media & pseudoclass */
+.nav-bar .nav-button:hover{
+    color:#F03A40;
+    text-decoration:underline;
+}
+.nav-bar .nav-button:active{
+    color:#F03A40;
+}
+
+@media (max-width:400px){
+    nav.nav-bar{
+        flex-direction: column;
+        align-content: space-evenly;
+        gap:5px;
+        align-items: center;
+    }
+}
+
+@media (max-width:525px){
+    .button.order-now#nav{
+        min-height: 50px;
+    }
+}
+
+/* footer */
+footer{
+    /* border:red solid 1px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:60px;
+    margin-bottom:15px;
+    gap:15px;
+    font-size: clamp(12px, 1.2vw, 14px);
+}
+
+footer div.logo-nozomi img{
+    /* border: green solid 1px; */
+    height: clamp(60px, 10vw, 100px);
+    flex: 1;
+    display: block;
+    margin:0;
+}
+
+nav.footer-nav{
+    /* border:green solid 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-evenly;
+}
+
+nav.footer-nav ul {
+    /* border:greenyellow 1px solid; */
+    list-style:none;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+nav.footer-nav li {
+    /* border:yellow 1px solid; */
+    color:#B8B8B8;
+    display: block;
+    width:150px;
+}
+
+nav.footer-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #B8B8B8;
+}
