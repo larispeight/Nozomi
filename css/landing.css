@@ -1,0 +1,9 @@
+.nav-bar .nav-button#home{
+    color: #d01319;
+}
+.nav-bar .nav-button#home:hover{
+    color: #F03A40;
+}
+.nav-bar .nav-button#home:active{
+    color:#F03A40;
+}
