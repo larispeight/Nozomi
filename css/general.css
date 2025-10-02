@@ -105,6 +105,7 @@ button {
 /* pseudoclass */
 .button:hover {
   border:#F03A40 solid 1px;
+  transform:scale(1.01);
 }
 
 .button:active {
@@ -113,6 +114,7 @@ button {
 
 button:hover {
   border:#F03A40 solid 1px;
+  transform:scale(1.01);
 }
 
 button:active {
