@@ -293,6 +293,7 @@ section.section-3{
     margin-top:60px;
     margin-bottom: 60px;
     padding:clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
+    display: flex;
 }
 
 div.big-container{
@@ -414,6 +415,8 @@ div.mini-container{
 }
 .review img{
     /* border:white 1px solid; */
+    padding-left:15px;
+    padding-right:15px;
     max-width: 200px;
     margin:0;
     display: block;
