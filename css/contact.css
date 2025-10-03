@@ -1,0 +1,246 @@
+/* nav-bar */
+.nav-bar .nav-button#contact{
+    color: #d01319;
+}
+.nav-bar .nav-button#contact:hover{
+    color: #F03A40;
+}
+.nav-bar .nav-button#contact:active{
+    color:#F03A40;
+}
+
+/* HERO */
+section.hero-1{
+    /* border:red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.background-image{
+    /* border:green solid 1px; */
+    position: absolute;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    height: 300px;
+    width: 100%;
+    filter: brightness(10%);
+}
+
+div.layer-top{
+    /* border:greenyellow 1px solid; */
+    z-index: 2;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin:auto;
+    padding: clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
+    justify-content: center;
+}
+
+h1.hero-title{
+    /* border:pink solid 1px; */
+    margin:0;
+    padding:0;
+    flex:1;
+    display: flex;
+}
+
+h1 img{
+    /* border:green solid 1px; */
+    display: block;
+    flex:1;
+    padding:0;
+    margin:0;
+    max-height: 100px;
+    width: 100%;
+}
+
+p.hero-text{
+    /* border:solid 1px green; */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.5;
+    display: block;
+    padding:0;
+    margin:0;   
+}
+
+a.button.order-now#hero-button{
+    /* border: solid 1px green; */
+    flex:1;
+    padding-left:10px;
+    padding-right:10px;
+    margin:auto;
+    margin-top:15px;
+    width: clamp(10px, 50%, 200px);
+    text-align: center;
+}
+
+/* section 3 - contact */
+section.section-3{
+    /* border:red solid 1px; */
+    margin-top:60px;
+    margin-bottom: 60px;
+    padding:clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
+    display: flex;
+}
+
+div.big-container{
+    /* border:green solid 1px; */
+    display: flex;
+    margin:auto;
+    max-width: 1000px;
+    gap:20px;
+    width:100%;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    /* margin-top:30px; */
+    /* margin-bottom:30px; */
+    padding:15px;
+    border-radius: 0.5rem;
+    background-color: #1E1E1E;
+}
+div.map{
+    /* border:yellow solid 1px; */
+    flex:1;
+    margin:0;
+    display: flex;
+    align-items: center;
+    background-color: #2C2C2C;
+    padding:15px;
+    border-radius: 0.5rem;
+}
+div.map iframe{
+    flex:1;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    min-width: 200px;
+}
+
+div.med-container{
+    /* border:yellow solid 1px; */
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap:20px;
+    flex:1;
+}
+div.opening-hour {
+    /* border: greenyellow solid 1px; */
+    flex:1;
+    padding:15px;
+    background-color: #2C2C2C;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.opening-hour h3{
+    /* border:white solid 1px; */
+    margin:0;
+}
+.opening-hour ul{
+    /* border:white solid 1px; */
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+div.small-container{
+    /* border:greenyellow solid 1px; */
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap:20px;
+    flex:1;
+}
+div.nav-menu{
+    /* border:pink solid 1px; */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    min-width: 125px;
+    justify-content: space-between;
+    gap:15px;
+}
+div.nav-bar a {
+    flex:1;
+}
+
+div.mini-container{
+    /* border:1px pink solid; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:20px;
+    flex:1;
+}
+
+.mini-container div.review{
+    /* border:orange solid 1px; */
+    flex:1;
+    padding:15px;
+    background-color: #2C2C2C;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.mini-container figure{
+    /* border:purple solid 1px; */
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    gap:5px;
+    margin:0;
+}
+.review img{
+    /* border:white 1px solid; */
+    max-width: 200px;
+    margin:0;
+    display: block;
+    align-self: center;
+}
+.review figcaption{
+    /* border:white 1px solid; */
+    margin:0;
+    display: block;
+}
+div.phone{
+    /* border:purple solid 1px; */
+    flex:1;
+    padding:15px;
+    background-color: #2C2C2C;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+div.phone h3{
+    margin:0;
+}
+div.phone p{
+    margin:0;
+}
+div.phone a{
+    text-decoration: none;
+    color: #d01319;
+    font-weight: 600;
+}
