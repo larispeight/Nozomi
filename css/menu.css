@@ -1,0 +1,455 @@
+/* nav-bar */
+.nav-bar .nav-button#menu{
+    color: #d01319;
+}
+.nav-bar .nav-button#menu:hover{
+    color: #F03A40;
+}
+.nav-bar .nav-button#menu:active{
+    color:#F03A40;
+}
+
+/* HERO */
+section.hero-1{
+    /* border:red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.background-image{
+    /* border:green solid 1px; */
+    position: absolute;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    height: 300px;
+    width: 100%;
+    filter: brightness(10%);
+}
+
+div.layer-top{
+    /* border:greenyellow 1px solid; */
+    z-index: 2;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin:auto;
+    padding: clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
+    justify-content: center;
+}
+
+h1.hero-title{
+    /* border:pink solid 1px; */
+    margin:0;
+    padding:0;
+    flex:1;
+    display: flex;
+}
+
+h4{
+    margin:0;
+}
+
+h1 img{
+    /* border:green solid 1px; */
+    display: block;
+    flex:1;
+    padding:0;
+    margin:0;
+    max-height: 100px;
+    width: 100%;
+}
+
+a.button.order-now{
+    /* border: solid 1px green; */
+    flex:1;
+    padding-left:10px;
+    padding-right:10px;
+    margin:auto;
+    margin-top:15px;
+    width: clamp(50px, 35%, 150px);
+    text-align: center;
+}
+
+/* buttons navigation - 1 */
+div.nav-class{
+    /* border:red solid 1px; */
+    display:flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    gap:15px;
+    max-width:fit-content;
+    margin:auto;
+    flex-wrap: wrap;
+    padding: clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
+}
+.nav-class a.button{
+    flex:1;
+    min-width: 150px;
+    padding: 5px;
+    font-weight: 400;
+    margin:auto; 
+    /* max-width: 150px;*/
+    /* margin-top: 15px; */
+}
+
+/* MAIN- ELEMENTS */
+h4.special-title, h3 {
+    /* border:purple dashed 1px; */
+    text-align: center;
+}
+
+main p {
+    /* border:white solid 1px; */
+    margin:0;
+}
+.dish-name{
+    color: #d6d6d6;
+    font-weight: 500;
+}
+li span{
+    /* border:white dotted 2px; */
+    margin:0;
+    display: block;
+}
+
+main .disclaimer {
+    text-align: center;
+}
+
+.disclaimer a {
+    margin-top:15px;
+    font-style: normal;
+}
+
+
+    /* title */
+header.title{
+    /* border:green solid 1px; */
+    text-align: center;
+}
+h2{
+    /* border:purple dashed 2px; */
+    margin:0;
+}
+
+/* container */
+section.lunch-special, .happy-hour{
+    /* border:red solid 1px; */
+    background-color: #1E1E1E;
+    display: flex;
+    padding: clamp(15px, 2vw, 25px) clamp(15px, 4vw, 30px);
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap:20px;
+    margin-bottom:40px;
+}
+
+section.full-menu, .nav-2 {
+    /* border:red solid 1px; */
+    display: flex;
+    padding:clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* gap:15px; */
+}
+div.flex-grid, section.menu-category, section.disclaimer{
+    /* border:green solid 1px; */
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    max-width: 800px;
+    width:100%;
+    align-content: center;
+    /* gap:15px; */
+}
+
+
+main ul{
+    /* border: solid 1px yellow; */
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex:1;
+}
+main li {
+    /* border:pink solid 1px; */
+    border-bottom: #2C2C2C 1px solid;
+    margin:0;
+    padding-bottom: 8px 0 12px 0;
+}
+
+.container-2 h3{
+    margin-top:10px;
+}
+
+/* images */
+div.image-lunch {
+    /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    /* max-width: 300px; */
+    min-height: 200px;
+    min-width: 180px;
+}
+div.image-happy{
+        /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    /* max-width: 300px; */
+    min-height: 100px;
+    min-width: 150px;
+}
+
+div.image-soup{
+        /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    min-height: 100px;
+    min-width: 150px;
+}
+div.image-entree{
+        /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    /* max-width: 300px; */
+    min-height: 100px;
+    min-width: 150px;
+}
+div.image-ramen{
+        /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    /* max-width: 300px; */
+    min-height: 100px;
+    min-width: 150px;
+}
+div.image-poke{
+        /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    /* max-width: 300px; */
+    min-height: 100px;
+    min-width: 180px;
+}
+div.image-sashimi{
+        /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    /* max-width: 300px; */
+    min-height: 100px;
+    min-width: 150px;
+}
+div.image-combo{
+        /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    /* max-width: 300px; */
+    min-height: 100px;
+    min-width: 150px;
+}
+div.image-dessert{
+        /* border:yellow solid 1px; */
+    flex:1;
+    background-image: url(/assets/nozo-test2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    /* max-width: 300px; */
+    min-height: 100px;
+    min-width: 150px;
+}
+
+/* image+text */
+.image-text{
+    /* border:orange 2px dashed; */
+    flex:1;
+    display: flex;
+    gap:clamp(10px, 2vw, 25px);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.image-text section{
+    flex:1 1 35%;
+}
+.full-menu .image-text ul {
+    flex:1 1 45%;
+}
+section.poke .image-text ul, section.sushi-combo .image-text ul{
+    flex:1 1 15%;
+}
+
+/* column list with only items */
+.items-column{
+    /* border: dashed 3px pink; */
+    flex:1 1 45%;   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: space-between;
+}
+.items-column li{
+    flex:1 1 20%;
+    /* display: flex; */
+    padding-bottom: 5px;
+    /* flex-direction: column; */
+    align-content: center;
+}
+
+.two-lines li{
+    display:flex;
+    flex-direction: column;
+    flex:1 1 30%
+}
+
+.items-column li p{
+    /* flex:1; */
+    margin:0;
+}
+
+.items-column li span{
+    flex:1;
+    align-content: center;
+}
+
+.special-roll .two-lines li{
+    flex:1 1 20%
+}
+
+/* column list with description */
+.double-column {
+    /* border:solid green 1px; */
+    flex-direction: row;
+    flex:1 1 55%;   
+    flex-wrap: wrap; 
+    gap:20px;
+}
+.double-column li {
+    /* border: dashed pink 2px; */
+    flex:1 1 45%;
+    display: flex;
+    padding-bottom: 5px;
+    flex-direction: column;
+}
+.double-column li p {
+    /* border: white solid 1px; */
+    /* flex:1; */
+    align-content: center;
+}
+.double-column li span {
+    /* border: white solid 1px; */
+    flex: 1;
+    align-content: center;
+}
+.double-column li .special-title {
+    flex:1;
+}
+
+/* specific full menu adjustments */
+.drinks {
+    /* border: pink 2px dashed; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.drinks div{
+    /* border:orange solid 1px; */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.drinks li{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.drinks p, .drinks span{
+    flex:1;
+}
+
+ .Soup-salad .image-text, .poke .image-text, .sushi-combo .image-text, .dessert .image-text{
+    flex-direction: row-reverse;
+}
+
+.sushi-sashimi span {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.lunch-special article{
+    border-bottom: #2C2C2C 1px solid;
+    margin:0;
+    padding-bottom: 8px 0 12px 0;
+}
+
+
+/* mobile responsibility */
+
+@media (max-width:480px) {
+    .double-column, .image-text{
+        gap:15px;
+        margin-bottom: 15px;
+    }
+    section.lunch-special, .happy-hour, section.full-menu{
+        margin-top:30px;
+        padding:15px;
+    }
+    main{
+        text-align: center;
+    }
+    .double-column, .image-text, .Soup-salad .image-text, .dessert .image-text, .poke .image-text, .sushi-combo .image-text {
+        flex-direction: column;
+    }
+    
+}

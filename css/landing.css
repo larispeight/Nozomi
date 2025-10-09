@@ -40,7 +40,7 @@ div.layer-top{
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 800px;
     margin:auto;
     padding: clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
     justify-content: center;
@@ -262,7 +262,7 @@ div.article-featured{
     border-bottom: #2C2C2C 1px solid;
     margin:0;
 }
-li h4 {
+li h3 {
     /* border:white solid 1px; */
     margin:0;
 }
