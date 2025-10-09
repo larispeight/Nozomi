@@ -25,7 +25,7 @@ section.hero-1{
 div.background-image{
     /* border:green solid 1px; */
     position: absolute;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -203,7 +203,7 @@ main li {
 div.image-lunch {
     /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -215,7 +215,7 @@ div.image-lunch {
 div.image-happy{
         /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -228,7 +228,7 @@ div.image-happy{
 div.image-soup{
         /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -239,7 +239,7 @@ div.image-soup{
 div.image-entree{
         /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -251,7 +251,7 @@ div.image-entree{
 div.image-ramen{
         /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -263,7 +263,7 @@ div.image-ramen{
 div.image-poke{
         /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -275,7 +275,7 @@ div.image-poke{
 div.image-sashimi{
         /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -287,7 +287,7 @@ div.image-sashimi{
 div.image-combo{
         /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -299,7 +299,7 @@ div.image-combo{
 div.image-dessert{
         /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
