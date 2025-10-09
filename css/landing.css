@@ -25,7 +25,7 @@ section.hero-1{
 div.background-image{
     /* border:green solid 1px; */
     position: absolute;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -126,7 +126,7 @@ div.container-1 {
     flex:1;
     /* min-width: 280px; */
     /* background-color: #F03A40; */
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -173,7 +173,7 @@ article.article-1{
     /* height: 400px; */
     flex:1;
     /* min-width: 280px; */
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -226,7 +226,7 @@ div.container-2{
 div.image-3 {
     /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(/assets/nozo-test2.jpg);
+    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
