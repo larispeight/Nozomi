@@ -70,7 +70,7 @@ button {
   font-size: clamp(0.875rem, 2vw, 1rem); 
   font-weight: 600;  
   border: none;
-  border-radius: 0.5rem;  
+  border-radius: 1rem;  
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
@@ -105,7 +105,7 @@ button {
   font-size: clamp(0.875rem, 2vw, 1rem); 
   font-weight: 600;  
   border: none;
-  border-radius: 0.5rem;  
+  border-radius: 1rem;  
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
@@ -117,6 +117,7 @@ button {
 .button:hover {
   border:#F03A40 solid 1px;
   transform:scale(1.01);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3)
 }
 
 .button:active {
@@ -142,6 +143,7 @@ nav.nav-bar{
     /* margin-top:30px; */
     flex-wrap: wrap;
     gap:15px;
+    border-radius:1rem;
 }
 
 .nav-bar img{
@@ -178,7 +180,6 @@ nav.nav-bar{
     /*@media & pseudoclass */
 .nav-bar .nav-button:hover{
     color:#F03A40;
-    text-decoration:underline;
 }
 .nav-bar .nav-button:active{
     color:#F03A40;
@@ -263,4 +264,90 @@ footer p {
   footer{
     text-align: center;
   }
+}
+
+/* animations */
+
+nav.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #121212;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+nav.nav-bar.scrolled {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.image-animation:hover {
+  filter: brightness(1.01);
+  transform: scale(1.02);
+}
+
+.nav-button {
+  position: relative;
+}
+.nav-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #d01319;
+  transition: width 0.3s ease;
+}
+.nav-button:hover::after {
+  width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease, transform 1s ease;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top:0; left:0; width:100%; height:100%;
+  pointer-events: none;
+  background: url('../assets/rocky-wall.png');
+  opacity: 0.06;
+  z-index: -1;
+}
+
+.textured {
+  position: relative; 
+  overflow: hidden;
+}
+
+.textured::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: url('../assets/broken-noise.png') center/cover no-repeat;
+  opacity: 0.5;
+  pointer-events: none; 
+  z-index: 1;
+}
+
+.textured * {
+  position: relative;
+  z-index: 2;
+}
+
+.lazy-bg {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.lazy-bg.loaded {
+  opacity: 1;
 }
