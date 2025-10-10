@@ -25,13 +25,19 @@ section.hero-1{
 div.background-image{
     /* border:green solid 1px; */
     position: absolute;
-    background-image: url(../assets/nozo-test2.jpg);
     background-size: cover;
     background-position: center;
     z-index: 0;
-    height: 300px;
+    height: 450px;
     width: 100%;
-    filter: brightness(10%);
+}
+.background-image {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.background-image.loaded {
+  opacity: 0.1;
 }
 
 div.layer-top{
@@ -87,6 +93,8 @@ a.button.order-now#hero-button{
 /* section 3 - contact */
 section.section-3{
     /* border:red solid 1px; */
+    max-width: 1000px;
+    margin:auto;
     margin-top:60px;
     margin-bottom: 60px;
     padding:clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
@@ -105,7 +113,7 @@ div.big-container{
     /* margin-top:30px; */
     /* margin-bottom:30px; */
     padding:15px;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     background-color: #1E1E1E;
 }
 div.map{
@@ -116,13 +124,13 @@ div.map{
     align-items: center;
     background-color: #2C2C2C;
     padding:15px;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 div.map iframe{
     flex:1;
     height: 100%;
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     min-width: 200px;
 }
 
@@ -139,7 +147,7 @@ div.opening-hour {
     flex:1;
     padding:15px;
     background-color: #2C2C2C;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -195,7 +203,7 @@ div.mini-container{
     flex:1;
     padding:15px;
     background-color: #2C2C2C;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -227,7 +235,7 @@ div.phone{
     flex:1;
     padding:15px;
     background-color: #2C2C2C;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
