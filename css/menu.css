@@ -29,7 +29,7 @@ div.background-image{
     background-size: cover;
     background-position: center;
     z-index: 0;
-    height: 450px;
+    height: 350px;
     width: 100%;
 }
 .background-image {
@@ -129,9 +129,6 @@ li span{
     display: block;
 }
 
-main .disclaimer {
-    text-align: center;
-}
 
 .disclaimer a {
     margin-top:15px;
