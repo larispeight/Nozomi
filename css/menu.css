@@ -113,7 +113,7 @@ main p {
     margin:0;
 }
 .dish-name{
-    color: #d6d6d6;
+    color: #EAEAEA;
     font-weight: 500;
 }
 li span{
@@ -450,6 +450,15 @@ section.poke .image-text ul, section.sushi-combo .image-text ul{
     }
     .double-column, .image-text, .Soup-salad .image-text, .dessert .image-text, .poke .image-text, .sushi-combo .image-text {
         flex-direction: column;
+    }
+    .items-column li {
+        flex:1 1 30%;
+    }
+    .items-column.two-lines li {
+        flex: 1 1 40%;
+    }
+    section.kitchen-entree .double-column{
+        flex-direction: row;
     }
     
 }

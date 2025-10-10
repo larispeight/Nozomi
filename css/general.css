@@ -27,7 +27,7 @@ h2 {
 }
 
 h3, h4.special-title {
-  font-size: clamp(1rem, 1.5vw, 1.25rem); 
+  font-size: clamp(1.1rem, 1.5vw, 1.25rem); 
   font-weight: 600;
   line-height: 1.4;
   color: #FFFFFF;
@@ -203,11 +203,12 @@ nav.nav-bar{
 footer{
     /* border:red solid 1px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+        padding: clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
     flex-wrap: wrap;
     margin-top:60px;
     margin-bottom:15px;
-    gap:15px;
+    /* gap:15px; */
     font-size: clamp(12px, 1.2vw, 14px);
 }
 
@@ -235,21 +236,31 @@ nav.footer-nav ul {
     display: flex;
     flex-direction: column;
     gap:5px;
+    flex:1 1 100px;
 }
 nav.footer-nav li {
     /* border:yellow 1px solid; */
     color:#B8B8B8;
     display: block;
-    width:150px;
+    /* width:150px; */
+    flex:1;
 }
 
 nav.footer-nav li a {
     display: block;
     text-decoration: none;
     color: #B8B8B8;
+    flex:1;
 }
 
 footer p {
-      font-size: clamp(12px, 1.2vw, 14px);
+      font-size: clamp(10px, 1.2vw, 12px);
       text-align: center;
+      flex:1;
+}
+
+@media (max-width:480px){
+  footer{
+    text-align: center;
+  }
 }
