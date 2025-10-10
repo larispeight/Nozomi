@@ -20,7 +20,7 @@
     <!-- NAV-BAR -->
 <nav class="nav-bar">
     <a href="./index.html" class="logo-nozomi">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House Logo">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House Logo" loading="lazy">
     </a>
     <a href="./index.html" class="nav-button" id="home">Home</a>
     <a href="./menu.html" class="nav-button" id="menu">Menu</a>
@@ -31,10 +31,10 @@
 <main>
     <!-- hero -->
 <section class="hero-1">
-    <div class="background-image" aria-hidden="true"></div>
+    <div class="background-image lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
     <div class="layer-top">
         <h1 class="hero-title">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House - Fresh Sushi in Chandler, AZ">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House - Fresh Sushi in Chandler, AZ" loading="lazy">
             <span class="sr-only">Reach Out to Nozomi Sushi House.</span>
         </h1>
         <p class="hero-text">Have questions, want to book a table, or plan a catering order?</p>
@@ -44,7 +44,7 @@
 </section>
 
  <!-- section contact -->
-<section class="section-3">
+<section class="section-3 hidden">
     <div class="big-container">
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.1752481044327!2d-111.86048892431816!3d33.235711973475325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0168d0b0702d%3A0x8185d8e0862daa48!2sNozomi%20Sushi%20House!5e0!3m2!1sen!2sus!4v1759363373189!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -68,11 +68,11 @@
                 <div class="mini-container">
                     <div class="review">
                         <figure id="google">
-                            <img class="stars" alt="4.8 stars" src="./assets/stars.png">
+                            <img class="stars" alt="4.8 stars" src="./assets/stars.png" loading="lazy">
                             <figcaption>Rated 4.8/5 on Google</figcaption>
                         </figure>
                         <figure id="yelp">
-                            <img class="stars" alt="4.7 stars" src="./assets/stars.png">
+                            <img class="stars" alt="4.7 stars" src="./assets/stars.png" loading="lazy">
                             <figcaption>Rated 4.7/5 on Yelp</figcaption>
                         </figure>
                     </div>
@@ -90,7 +90,7 @@
 <!-- footer -->
 <footer>
     <div class="logo-nozomi">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House Logo">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House Logo" loading="lazy">
     </div>
     <nav class="footer-nav" aria-label="Footer">
         <ul>
@@ -112,6 +112,8 @@
         </ul>
     </nav>
 </footer>
+
+<script src="./js/optional-animations.js"></script>
 
 </body>
 </html>
