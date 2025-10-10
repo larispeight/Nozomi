@@ -20,6 +20,7 @@ section.hero-1{
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    margin-bottom:60px;
 }
 
 div.background-image{
