@@ -22,7 +22,7 @@
     <!-- NAV-BAR -->
 <nav class="nav-bar">
     <a href="./index.html" class="logo-nozomi">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House" loading="lazy">
     </a>
     <a href="./index.html" class="nav-button" id="home">Home</a>
     <a href="./menu.html" class="nav-button" aria-current="page" id="menu">Menu</a>
@@ -33,10 +33,10 @@
 <main>
     <!-- hero -->
 <section class="hero-1">
-    <div class="background-image" aria-hidden="true"></div>
+    <div class="background-image lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
     <div class="layer-top">
         <h1 class="hero-title">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House - Fresh Sushi in Chandler, AZ">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House - Fresh Sushi in Chandler, AZ" loading="lazy">
             <span class="sr-only">Explore our Menu - Sushi, Ramen, and Japanese Cuisine in Chandler, AZ</span>
         </h1>
         <p class="hero-text">Discover fresh, authentic sushi and Japanese dishes crafted daily in Chandler, AZ.</p>
@@ -54,14 +54,14 @@
 </nav>
 
     <!-- Lunch Special -->
-<section class="lunch-special" id="lunch">
+<section class="lunch-special hidden textured image-animation" id="lunch">
     <header class="title">
         <h2>Lunch Special</h2>
         <h3>Monday - Saturday | 11AM - 2PM</h3>
     </header>
     <div class="flex-grid">
             <div class="container-1 image-text">
-                <div class="image-lunch" aria-hidden="true"></div>
+                <div class="image-lunch image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
                 <section aria-label="Lunch Special Sushi">
                     <article aria-label="Nozomi House Special">
                         <h4 class="special-title">Nozomi House*</h4>
@@ -117,14 +117,14 @@
 </section>
 
 <!-- happy hour -->
- <section class="happy-hour" id="happy">
+ <section class="happy-hour hidden textured image-animation" id="happy">
     <header class="title">
         <h2>Happy Hour</h2>
         <h3>Monday - Thursday | 2PM - 5PM</h3>
     </header>
     <div class="flex-grid">
             <div class="container-1 image-text">
-            <div class="image-happy" aria-hidden="true"></div>
+            <div class="image-happy image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
             <section aria-label="Happy Hour Appetizers and Soups">
                     <article aria-label="Appetizer">
                         <h4 class="special-title">Appetizer</h4>
@@ -220,9 +220,9 @@
 </nav>
 
 <!-- full menu -->
-<section class="full-menu" id="full">
+<section class="full-menu hidden" id="full">
 
-    <section class="appetizer menu-category" id="appetizer" aria-label="Appetizer">
+    <section class="appetizer menu-category hidden" id="appetizer" aria-label="Appetizer">
         <h3 class="special-title">Appetizer</h3>
         <ul class="items-column two-lines">
             <li>
@@ -268,7 +268,7 @@
         </ul>
     </section>
 
-    <section class="Carpaccio menu-category">
+    <section class="Carpaccio menu-category hidden">
         <h3 class="special-title">Carpaccio Style</h3>
         <ul class="items-column two-lines">
             <li>
@@ -298,10 +298,10 @@
         </ul>
     </section>
 
-    <section class="Soup-salad menu-category">
+    <section class="Soup-salad menu-category hidden">
         <h3 class="special-title">Soup & Salad</h3>
         <div class="image-text">
-            <div class="image-soup"></div>
+            <div class="image-soup image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg"></div>
             <ul class="double-column">
                 <li>
                     <p class="dish-name">Miso Soup</p>
@@ -327,10 +327,10 @@
         </div>
     </section>
 
-    <section class="kitchen-entree menu-category" id="entree" aria-label="Kitchen Entrée">
+    <section class="kitchen-entree menu-category hidden" id="entree" aria-label="Kitchen Entrée">
     <h3 class="special-title">Kitchen Entrée</h3>
     <div class="image-text">
-        <div class="image-entree" aria-hidden="true"></div>
+        <div class="image-entree image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
         <ul class="double-column">
             <li>
                 <h4 class="special-title">Fried Rice</h4>
@@ -349,10 +349,10 @@
     </div>
     </section>
 
-    <section class="ramen menu-category" aria-label="Ramen">
+    <section class="ramen menu-category hidden" aria-label="Ramen">
     <h3 class="special-title">Ramen</h3>
     <div class="image-text">
-        <div class="image-ramen" aria-hidden="true"></div>
+        <div class="image-ramen image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
         <ul class="double-column">
             <li>
                 <p class="dish-name">Tonkotsu Ramen</p>
@@ -374,10 +374,10 @@
     </div>
     </section>
 
-    <section class="poke menu-category" aria-label="Poke">
+    <section class="poke menu-category hidden" aria-label="Poke">
     <h3 class="special-title">Poke</h3>
     <div class="image-text">
-        <div class="image-poke" aria-hidden="true"></div>
+        <div class="image-poke image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
         <ul>
             <li>
                 <p class="dish-name">Tuna Poke*</p>
@@ -396,11 +396,11 @@
     </section>
 
 
-    <section class="sushi-sashimi menu-category" id="sashimi-sushi" aria-label="Sushi & Sashimi">
+    <section class="sushi-sashimi menu-category hidden" id="sashimi-sushi" aria-label="Sushi & Sashimi">
     <h3 class="special-title">Sushi & Sashimi</h3>
     <span class="title-description">Sushi 2PCS - Sashimi 5PCS</span>
     <div class="image-text">
-        <div class="image-sashimi" aria-hidden="true"></div>
+        <div class="image-sashimi image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
         <ul class="items-column">
             <li class="dish-name">Tuna (AHI)*</li>
             <li class="dish-name">Salmon (SAKE)*</li>
@@ -420,10 +420,10 @@
     </section>
 
 
-    <section class="sushi-combo menu-category" aria-label="Sushi & Sashimi Combo">
+    <section class="sushi-combo menu-category hidden" aria-label="Sushi & Sashimi Combo">
     <h3 class="special-title">Sushi & Sashimi Combo</h3>
     <div class="image-text">
-        <div class="image-combo" aria-hidden="true"></div>
+        <div class="image-combo image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
         <ul>
             <li>
                 <p class="dish-name">Sushi or Sashimi*</p>
@@ -444,7 +444,7 @@
     </section>
 
 
-    <section class="special-roll menu-category" id="special" aria-label="Special Roll">
+    <section class="special-roll menu-category hidden" id="special" aria-label="Special Roll">
     <h3 class="special-title">Special Roll</h3>
     <ul class="items-column two-lines">
         <li>
@@ -587,10 +587,10 @@
     </section>
 
 
-    <section class="dessert menu-category" id="dessert" aria-label="Dessert">
+    <section class="dessert menu-category hidden" id="dessert" aria-label="Dessert">
     <h3 class="special-title">Dessert</h3>
     <div class="image-text">
-        <div class="image-dessert"></div>
+        <div class="image-dessert image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg"></div>
         <ul class="double-column">
             <li>
                 <p class="dish-name">Mochi Ice Cream</p>
@@ -613,7 +613,7 @@
     </section>
 
 
-    <section class="non-alco menu-category" aria-label="Non-Alcoholic Beverage">
+    <section class="non-alco menu-category hidden" aria-label="Non-Alcoholic Beverage">
     <h3 class="special-title">Non-Alcoholic Beverage</h3>
     <ul class="items-column two-lines">
         <li>
@@ -642,7 +642,7 @@
     </section>
 
 
-    <section class="disclaimer" aria-label="Menu Disclaimer">
+    <section class="disclaimer hidden" aria-label="Menu Disclaimer">
         <p class="disclaimer" role="note">
             * Contains raw fish. Menu items may contain raw or undercooked ingredients. Consuming raw or undercooked meats, poultry, shellfish, or eggs may increase your risk of foodborne illness.
         </p>
@@ -658,7 +658,7 @@
 <!-- footer -->
 <footer>
     <div class="logo-nozomi">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House" loading="lazy">
             <p>&copy; 2025 Nozomi Sushi House</p>
         </div>
     <nav class="footer-nav" aria-label="Footer">
@@ -681,6 +681,8 @@
         </ul>
     </nav>
 </footer>
+
+<script src="./js/optional-animations.js"></script>
 
 </body>
 </html>

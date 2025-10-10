@@ -20,7 +20,7 @@
     <!-- NAV-BAR -->
 <nav class="nav-bar">
     <a href="./index.html" class="logo-nozomi">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House" loading="lazy">
     </a>
     <a href="./index.html" class="nav-button" aria-current="page" id="home">Home</a>
     <a href="./menu.html" class="nav-button" id="menu">Menu</a>
@@ -31,10 +31,10 @@
 <main>
     <!-- hero -->
 <section class="hero-1">
-    <div class="background-image" aria-hidden="true"></div>
+    <div class="background-image lazy-bg" data-bg="../assets/nozo-test2.jpg" aria-hidden="true"></div>
     <div class="layer-top">
         <h1 class="hero-title">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House - Fresh Sushi in Chandler, AZ">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House - Fresh Sushi in Chandler, AZ" loading="lazy">
             <span class="sr-only">Nozomi Sushi House</span>
         </h1>
         <p class="hero-text">Fresh, authentic sushi in Chandler & Sun Lakes—made daily with care.</p>
@@ -49,20 +49,20 @@
         <p>Enjoy freshly made sushi, from traditional nigiri to creative rolls, in Chandler, AZ.</p>
     </header>
     <div class="container-1">
-        <div class="image-1"></div>
-        <article class="article-1">
+        <div class="image-1 image-animation hidden lazy-bg" data-bg="../assets/nozo-test2.jpg"></div>
+        <article class="article-1 hidden textured">
             <h3>Delicious Sushi, Made Fresh Daily</h3>
             <p>From traditional nigiri to creative rolls, our sushi is crafted fresh daily for Chandler, Sun Lakes, and Ocotillo locals.</p>
             <a href="./menu.html" class="button">Explore Our Menu</a>
         </article>
-        <div class="image-2"></div>
+        <div class="image-2 image-animation hidden lazy-bg" data-bg="../assets/nozo-test2.jpg"></div>
     </div>
 </section>
 
 <!-- section 2 - featured items -->
- <section class="section-2">
+ <section class="section-2 hidden textured">
     <div class="container-2">
-        <div class="image-3"></div>
+        <div class="image-3 image-animation lazy-bg" data-bg="../assets/nozo-test2.jpg"></div>
         <div class="article-featured">
             <p>Popular sushi favorites</p>
             <h2>Featured Items</h2>
@@ -87,13 +87,13 @@
  </section>
 
  <!-- section 3 - contact -->
-<section class="section-3">
-    <div class="big-container">
-        <div class="map">
+<section class="section-3 hidden">
+    <div class="big-container textured">
+        <div class="map image-animation">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.1752481044327!2d-111.86048892431816!3d33.235711973475325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0168d0b0702d%3A0x8185d8e0862daa48!2sNozomi%20Sushi%20House!5e0!3m2!1sen!2sus!4v1759363373189!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="med-container">
-            <div class="opening-hour">
+            <div class="opening-hour image-animation">
                 <h3>Opening Hours</h3>
                 <ul>
                 <li>
@@ -113,17 +113,17 @@
                     <a href="https://order.toasttab.com/online/nozomi-sushi-house-4955-s-alma-school-rd-suite-4" target="_blank" class="button">Order Now</a>
                 </div>
                 <div class="mini-container">
-                    <div class="review">
+                    <div class="review image-animation">
                         <figure id="google">
-                            <img class="stars" alt="4.8 stars" src="./assets/stars.png">
+                            <img class="stars" alt="4.8 stars" src="./assets/stars.png" loading="lazy">
                             <figcaption>4.8 Google Review</figcaption>
                         </figure>
                         <figure id="yelp">
-                            <img class="stars" alt="4.7 stars" src="./assets/stars.png">
+                            <img class="stars" alt="4.7 stars" src="./assets/stars.png" loading="lazy">
                             <figcaption>4.7 Yelp Review</figcaption>
                         </figure>
                     </div>
-                    <div class="phone">
+                    <div class="phone image-animation">
                         <h3>Call Now to Reserve Your Table!</h3>
                         <p><a href="tel:4803507627">(480) 350-7627</a></p>
                     </div>
@@ -137,7 +137,7 @@
 <!-- footer -->
 <footer>
     <div class="logo-nozomi">
-            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House">
+            <img src="./assets/nozo-test.svg" alt="Nozomi Sushi House" loading="lazy">
     </div>
     <nav class="footer-nav" aria-label="Footer">
         <ul>
@@ -160,5 +160,6 @@
     </nav>
 </footer>
 
+<script src="./js/optional-animations.js"></script>
 </body>
 </html>
