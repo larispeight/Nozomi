@@ -129,6 +129,11 @@ li span{
     display: block;
 }
 
+strong{
+    color: #EAEAEA;
+    font-weight: 500;
+}
+
 
 .disclaimer a {
     margin-top:15px;
@@ -431,6 +436,31 @@ section.poke .image-text ul, section.sushi-combo .image-text ul{
     padding-bottom: 8px 0 12px 0;
 }
 
+section.bento-box div{
+    flex-direction: row-reverse;
+}
+section.bento-box ul{
+    margin:auto;
+}
+
+/* special-roll+pictures */
+section.special-roll li.sp-roll{
+    /* border:blue solid 1px; */
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    flex:1 1 45%;
+}
+section.special-roll li.sp-roll div.image-lunch{
+    flex:1 1 45%;
+    min-width: 160px;
+    min-height: auto;
+    /* border:#d01319 solid 1px; */
+}
+section.special-roll li.sp-roll .text-right{
+    flex:1 1 45%;
+    /* border:#d01319 solid 1px; */
+}
 
 /* mobile responsibility */
 @media (max-width:1000px){
