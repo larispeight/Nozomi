@@ -133,7 +133,7 @@ div.container-1 {
     flex:1;
     /* min-width: 280px; */
     /* background-color: #F03A40; */
-    background-image: url(../assets/nozo-test2.jpg);
+    /* background-image: url(../assets/nozo-test2.jpg); */
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
@@ -180,7 +180,7 @@ article.article-1{
     /* height: 400px; */
     flex:1;
     /* min-width: 280px; */
-    background-image: url(../assets/nozo-test2.jpg);
+    /* background-image: url(../assets/nozo-test2.jpg); */
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
@@ -190,7 +190,7 @@ article.article-1{
 /* @media & pseudoclass */
 @media (max-width:1000px) {
     .container-1 .image-2, .container-1 .image-1{
-        min-height: 200px;
+        min-height: 250px;
         /* margin:auto; */
     }
     div.container-1 {
@@ -198,7 +198,7 @@ article.article-1{
     }
     article.article-1{
         min-height: 200px;
-        max-width: 500px;
+        /* max-width: 500px; */
         margin:auto;
         min-width: 100px;
     }
@@ -214,7 +214,6 @@ section.section-2{
     background-color: #1E1E1E;
     display: flex;
     padding:clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
-    width: 100%;
     overflow: hidden;
     box-sizing: border-box;
     border-radius: 1rem;
@@ -236,7 +235,7 @@ div.container-2{
 div.image-3 {
     /* border:yellow solid 1px; */
     flex:1;
-    background-image: url(../assets/nozo-test2.jpg);
+    /* background-image: url(../assets/nozo-test2.jpg); */
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
@@ -290,6 +289,10 @@ li span{
     }
     div.image-3 {
         min-height: 200px;
+    }
+    section.section-2{
+        margin: clamp(10px, 2vw, 20px) clamp(15px, 4vw, 30px);
+        flex:1;
     }
 }
 
