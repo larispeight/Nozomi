@@ -97,9 +97,11 @@
                 <li class="dish-name">Spicy Tuna Tempura Roll*</li>
             </ul>
         </section>
-        <section aria-label="Bento Box">
+        <section class="bento-box menu-category" aria-label="Bento Box">
             <h3 class="special-title">Bento Box</h3>
-            <ul class="double-column">
+            <div class="image-text">
+            <div class="image-lunch image-animation lazy-bg" data-bg="./assets/menu-pictures/Bento-lunch-special.jpeg" aria-hidden="true"></div>
+            <ul>
                 <li>
                 <p class="dish-name">Chicken Bento Box</p>
                 <span class="dish-description">Teriyaki Chicken served with California Roll, salad, Gyoza</span>
@@ -109,6 +111,7 @@
                 <span class="dish-description">Teriyaki Beef served with California Roll, salad, Gyoza</span>
                 </li>
             </ul>
+        </div>
         </section>
 
             <p class="disclaimer" role="note">* Contains raw fish. Consuming raw or undercooked ingredients may increase your risk of foodborne illness.</p>
@@ -160,6 +163,8 @@
 
             <section aria-label="Rolls">
                 <h3 class="special-title">Rolls</h3>
+                <div class="image-text rolls">
+                <div class="image-lunch image-animation lazy-bg" data-bg="./assets/menu-pictures/Cali-roll.jpeg" aria-hidden="true"></div>
                 <ul class="items-column">
                     <li class="dish-name">California Roll</li>
                     <li class="dish-name">Spicy Tuna Roll*</li>
@@ -174,6 +179,7 @@
                     <li class="dish-name">Philadelphia Roll*</li>
                     <li class="dish-name">Golden Tiger Roll</li>
                 </ul>
+                </div>
             </section>
             
             <section aria-label="Drinks" class="drinks">
@@ -270,6 +276,8 @@
 
     <section class="Carpaccio menu-category hidden">
         <h3 class="special-title">Carpaccio Style</h3>
+        <div class="image-text">
+        <div class="image-carpaccio image-animation lazy-bg" data-bg="./assets/menu-pictures/tuna-carpaccio.jpeg"></div>
         <ul class="items-column two-lines">
             <li>
                 <p class="dish-name">Salmon (5PCS)*</p>
@@ -296,6 +304,7 @@
                 <span class="dish-description">Uni, quail egg, tobiko, ponzu sauce, scallion</span>
             </li>
         </ul>
+        </div>
     </section>
 
     <section class="Soup-salad menu-category hidden">
@@ -446,6 +455,13 @@
             <p class="dish-name">Pink Lady Roll*</p>
             <span class="dish-description">Tuna, salmon, yellowtail, avocado wrapped in soy paper topped with spicy mayo and eel sauce</span>
         </li>
+        <li class="sp-roll">
+            <div class="image-lunch image-animation lazy-bg" data-bg="./assets/menu-pictures/vegas-roll.jpeg" aria-hidden="true"></div>
+            <div class="text-right">
+            <p class="dish-name">Vegas Roll*</p>
+            <span class="dish-description">Salmon, crabmeat, cream cheese, avocado & deep-fried topped with spicy mayo, eel sauce</span>
+         </div>
+        </li>
         <li>
             <p class="dish-name">Aburi Tuna Roll*</p>
             <span class="dish-description">Spicy tuna roll topped with seared tuna, soy mustard sauce, fried onion</span>
@@ -466,13 +482,16 @@
             <p class="dish-name">Dragon Roll</p>
             <span class="dish-description">California Roll topping with eel fish, eel sauce, sesame seeds</span>
         </li>
+        <li class="sp-roll">
+            <div class="image-lunch image-animation lazy-bg" data-bg="./assets/menu-pictures/Shrimp-tempura.jpeg" aria-hidden="true"></div>
+            <div class="text-right">
+            <p class="dish-name">Shrimp Tempura Roll</p>
+            <span class="dish-description">Tempura shrimp, crabmeat, avocado topped with spicy mayo, eel sauce, tempura crunch</span>
+            </div>
+        </li>
         <li>
             <p class="dish-name">Seared Salmon Roll*</p>
             <span class="dish-description">California Roll topping with seared salmon, spicy mayo, eel sauce</span>
-        </li>
-        <li>
-            <p class="dish-name">Shrimp Tempura Roll</p>
-            <span class="dish-description">Tempura shrimp, crabmeat, avocado topped with spicy mayo, eel sauce, tempura crunch</span>
         </li>
         <li>
             <p class="dish-name">Salmon Citrus Roll*</p>
@@ -483,20 +502,12 @@
             <span class="dish-description">Shrimp tempura, spicy tuna, avocado topped with spicy mayo, eel sauce</span>
         </li>
         <li>
-            <p class="dish-name">Vegas Roll*</p>
-            <span class="dish-description">Salmon, crabmeat, cream cheese, avocado & deep-fried topped with spicy mayo, eel sauce</span>
-        </li>
-        <li>
             <p class="dish-name">Albacore Roll*</p>
             <span class="dish-description">Spicy tuna, avocado, cucumber topped with albacore, soy mustard sauce</span>
         </li>
         <li>
             <p class="dish-name">Golden Tiger Roll</p>
             <span class="dish-description">Shrimp tempura, crabmeat, avocado, deep fried topped with spicy mayo, eel sauce</span>
-        </li>
-        <li>
-            <p class="dish-name">Yellowtail Jalapeño Roll*</p>
-            <span class="dish-description">Spicy tuna, cucumber, avocado, topped with yellowtail, jalapeno, sriracha</span>
         </li>
         <li>
             <p class="dish-name">Sedona Roll*</p>
@@ -521,6 +532,13 @@
         <li>
             <p class="dish-name">Hawaiian Roll*</p>
             <span class="dish-description">Shrimp tempura, spicy tuna, avocado, topped with tuna, salmon, sliced lemon, ponzu</span>
+        </li>
+        <li class="sp-roll">
+            <div class="image-lunch image-animation lazy-bg" data-bg="./assets/menu-pictures/spicy-yellowtail.jpeg" aria-hidden="true"></div>
+            <div class="text-right">
+                <p class="dish-name">Yellowtail Jalapeño Roll*</p>
+                <span class="dish-description">Spicy tuna, cucumber, avocado, topped with yellowtail, jalapeno, sriracha</span>
+            </div>
         </li>
         <li>
             <p class="dish-name">Super White Roll*</p>
