@@ -235,24 +235,13 @@ div.image-happy{
     min-width: 150px;
 }
 
-div.image-soup{
+div.image-carpaccio{
         /* border:yellow solid 1px; */
     flex:1;
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
     transition: all 0.3s ease;
-    min-height: 100px;
-    min-width: 150px;
-}
-div.image-entree{
-        /* border:yellow solid 1px; */
-    flex:1;
-    background-size: cover;
-    background-position: center;
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-    /* max-width: 300px; */
     min-height: 100px;
     min-width: 150px;
 }
@@ -421,7 +410,7 @@ section.poke .image-text ul, section.sushi-combo .image-text ul{
     flex:1;
 }
 
- .Soup-salad .image-text, .poke .image-text, .sushi-combo .image-text, .dessert .image-text{
+.poke .image-text, .sushi-combo .image-text, .dessert .image-text, .image-text.rolls {
     flex-direction: row-reverse;
 }
 
@@ -483,7 +472,7 @@ section.special-roll li.sp-roll .text-right{
     main{
         text-align: center;
     }
-    .double-column, .image-text, .Soup-salad .image-text, .dessert .image-text, .poke .image-text, .sushi-combo .image-text {
+    .double-column, .image-text, .image-text, .dessert .image-text, .poke .image-text, .sushi-combo .image-text {
         flex-direction: column;
     }
     .items-column li {
