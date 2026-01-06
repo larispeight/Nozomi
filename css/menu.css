@@ -164,6 +164,7 @@ section.lunch-special, .happy-hour{
     gap:20px;
     max-width: 1000px;
     margin:auto;
+    margin-top:30px;
     margin-bottom:40px;
     border-radius: 1rem;
 }
@@ -311,19 +312,19 @@ div.image-dessert{
     justify-content: space-between;
 }
 .image-text section{
-    flex:1 1 35%;
+    flex:1 1 5%;
 }
 .full-menu .image-text ul {
-    flex:1 1 45%;
+    flex:1 1 5%;
 }
 section.poke .image-text ul, section.sushi-combo .image-text ul{
-    flex:1 1 15%;
+    flex:1 1 5%;
 }
 
 /* column list with only items */
 .items-column{
     /* border: dashed 3px pink; */
-    flex:1 1 45%;   
+    flex:1 1 25%;   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -414,10 +415,14 @@ section.poke .image-text ul, section.sushi-combo .image-text ul{
     flex-direction: row-reverse;
 }
 
+.sushi-sashimi h3.special-title{
+    margin-bottom: 0;
+}
 .sushi-sashimi span {
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
+
 
 .lunch-special article{
     border-bottom: #2C2C2C 1px solid;
