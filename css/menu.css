@@ -212,17 +212,25 @@ main li {
     margin-top:10px;
 }
 
+.container-2 .rolls ul.items-column{
+    flex:1 1 45%;
+    display: flex;
+}
+.container-2 .rolls ul.items-column li {
+    flex: 1 1 25%;
+}
+
 /* images */
 div.image-lunch {
     /* border:yellow solid 1px; */
-    flex:1;
+    flex:1 1 45%;
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
     transition: all 0.3s ease;
     /* max-width: 300px; */
-    min-height: 200px;
-    min-width: 180px;
+    min-height: 150px;
+    min-width: 50px;
 }
 div.image-happy{
         /* border:yellow solid 1px; */
@@ -312,13 +320,13 @@ div.image-dessert{
     justify-content: space-between;
 }
 .image-text section{
-    flex:1 1 5%;
+    flex:1 1 15%;
 }
 .full-menu .image-text ul {
-    flex:1 1 5%;
+    flex:1 1 15%;
 }
 section.poke .image-text ul, section.sushi-combo .image-text ul{
-    flex:1 1 5%;
+    flex:1 1 15%;
 }
 
 /* column list with only items */
@@ -437,6 +445,13 @@ section.bento-box ul{
     margin:auto;
 }
 
+section.bento-box .image-lunch{
+    /* border:1px red solid; */
+    flex:1;
+    min-height: 200px;
+}
+
+
 /* special-roll+pictures */
 section.special-roll li.sp-roll{
     /* border:blue solid 1px; */
@@ -477,8 +492,11 @@ section.special-roll li.sp-roll .text-right{
     main{
         text-align: center;
     }
-    .double-column, .image-text, .image-text, .dessert .image-text, .poke .image-text, .sushi-combo .image-text {
+    .Carpaccio .image-text, .double-column, .rolls.image-text, .dessert .image-text, .poke .image-text, .sushi-combo .image-text, .sushi-sashimi .image-text, .container-1.image-text {
         flex-direction: column;
+    }
+    .bento-box .image-text{
+        flex-direction: column-reverse;
     }
     .items-column li {
         flex:1 1 30%;
@@ -491,5 +509,11 @@ section.special-roll li.sp-roll .text-right{
     }
     section.special-roll li.sp-roll{
         flex-direction: column;
+    }
+    div.image-poke, div.image-sashimi, div.image-combo, div.image-carpaccio, div.image-lunch, div.image-happy{
+        min-height: 160px;
+    }
+    .container-1 .image-lunch, .rolls .image-lunch{
+        min-height: 250px;
     }
 }
