@@ -447,8 +447,8 @@ section.special-roll li.sp-roll{
 }
 section.special-roll li.sp-roll div.image-lunch{
     flex:1 1 45%;
-    min-width: 160px;
-    min-height: auto;
+    min-width: 100px;
+    min-height: 80px;
     /* border:#d01319 solid 1px; */
 }
 section.special-roll li.sp-roll .text-right{
@@ -489,5 +489,7 @@ section.special-roll li.sp-roll .text-right{
     section.kitchen-entree .double-column{
         flex-direction: row;
     }
-    
+    section.special-roll li.sp-roll{
+        flex-direction: column;
+    }
 }
